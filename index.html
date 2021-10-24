@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>VEX IQ</title>
+	<style>
+		img {
+			height:300px;
+			width:auto;
+			display:block;
+			margin:auto;
+		}
+		h2 {
+			font-size: 50px;
+		}
+	</style>
+	
+</head>
+<body>
+	<h2> Основы сборки и программирования</h2>
+	<h3> Приветствую, дорогой олипиадник! Мы рады видеть тебя на нашем сайте для подготовки к соревнованиям по робототехнике. Здесь ты можешь вспомнить основные детали программирования. </h3>
+	 <img src=https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDQ2NTA2OQ&ixlib=rb-1.2.1&q=85 <alt='картинка кода'>
+	<h4> <i>Как задать программу движения?</i> </h4>
+	<p> 1. настроить датчики и порты. </p>
+	<p> 2. Использовать программу "void move", подписав в скобках переменные мощности движения и времени в милисекундах. </p>
+	<p> 3. Пример: <code> <br>
+		{ <br>
+		        void move(int v2, int v3, int t); <br>
+	          motor[motor1]=v2; <br>
+	          motor[motor2]=v3; <br>
+	          wait1Msec(t); <br>
+		   }</code></p>
+	<p> <u>!ВАЖНО! не забывать прo фигурные скобки!</u></p>
+	
+	<h4> <i>Как запрограммировать повороты по гидроскопу?</i></h4>
+	<p>  1. Настроить датчики и порты </p>
+	<p>  2. введение гидроскопа через <code> <br>
+		                                        { <br>
+		                                        void deq(int deg, int k, int n) <br>
+		                                        {resetgyro(PortQ)} <br>
+		                                              }</code></p>
+	<p>  3. введение переменных</p>
+
+<h4> <i>Как запрограммировать пульт?</i> </h4>
+	 <h5></h5>
+	<p> 1. настроить датчики и порты. </p>
+	<p> 2. прописать моторы через void move(int v2, int v3, int t); </p>
+	<p> 3. задать значения переменных. </p>
+	<p> 4. прописать кнопки через переменные, пример: w = vexRT[BtnRup]+2*vexRT[BtnRDown];</p>
+	<p> 5. настроить чувствительность джойстика, пример: <code> <br>
+		                                          { <br>
+		                                                   case 1: <br>
+	                                                     move_m(0,-127,2) <br>
+	                                                     break; <br>
+		                                                         }
+		                                                         </code> </p>
+	
+	<h3> К сожалению, это пока всё, но скоро база пополнится!:D </h3>
+	<img src="https://images.unsplash.com/photo-1589254065408-24b23ba67800?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDQ2Mjg4NA&ixlib=rb-1.2.1&q=85" alt="картинка робота">
+</body>
+</html>
